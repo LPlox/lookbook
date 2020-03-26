@@ -1,7 +1,8 @@
+import fetch from "isomorphic-unfetch";
 import Head from "../modules/default/head";
 import Layout from "../modules/layout/layout";
 
-const Index = () => (
+const Index = ({data}) => (
   <div className="container">
     <Head
       title="Lookbook"
@@ -17,5 +18,12 @@ const Index = () => (
     </Layout>
   </div>
 );
+
+Index.getInitialProps = async () => {
+  const req = await fetch(`http://localhost:3000/api/home`);
+  const data = req.json();
+  console.log(data);
+  return data;
+};
 
 export default Index;

@@ -4,8 +4,12 @@ const Header = () => (
   <header>
     <div className="logo"></div>
     <nav>
-      <Link href="/home">Home</Link>
-      <Link href="/collections">Collections</Link>
+      <Link href="/home">
+        <a>Home</a>
+      </Link>
+      <Link href="/collections">
+        <a>Collections</a>
+      </Link>
       <div className="dropdown"></div>
     </nav>
   </header>
