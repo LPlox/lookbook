@@ -2,7 +2,7 @@ import fetch from "isomorphic-unfetch";
 import Head from "../modules/default/head";
 import Layout from "../modules/layout/layout";
 
-const Index = ({data}) => (
+const Index = ({ content: { body } }) => (
   <div className="container">
     <Head
       title="Lookbook"
@@ -11,8 +11,8 @@ const Index = ({data}) => (
 
     <Layout>
       <main>
-        <h1 className="title">Homepage &rarr;</h1>
-        <p className="description">description text for homepage</p>
+        <h1 className="title">{body[0].promo_title} &rarr;</h1>
+        <img src={body[0].promo_img[0].filename} alt="promo image" />
       </main>
       <footer></footer>
     </Layout>
@@ -22,7 +22,6 @@ const Index = ({data}) => (
 Index.getInitialProps = async () => {
   const req = await fetch(`http://localhost:3000/api/home`);
   const data = req.json();
-  console.log(data);
   return data;
 };
 

@@ -18,8 +18,19 @@ npm run dev
 
 Make sure to do a npm install when you enter another branch
 
-Think I have to start with the front end more before I can decide on what to do for the backend.
-
 I need a 1. homepage 2.Collections page as default pages. Here I can get the data as getInitialProperty to the specific pages.
 Everything else needs to be called from a slug.
 It's probably bad practice to call the storyblok many times or on different pages. It's better to do it at one place and then distribute it in the different pages.
+
+Homepage has a special collection on display.
+How should the data be nested so I can pick one easily?
+
+---
+
+Collection - Name of designer - Images of collection - Description of overall collection - Release date - Sold out (boolean) - End date - LINK
+
+-- Product - Name of product - Images - Sizes - Description - Price - Sold out (boolean) - tags (gender, color, season, type of clothing) - LINK
+
+Sort functions: New / Old - All Designers name - Season - Clothing piece
+
+Categories:
