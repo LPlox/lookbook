@@ -6,7 +6,7 @@ const Index = ({data}) => (
   <div className="container">
     <Head
       title="Lookbook"
-      description="Example ecommerce website with Next.js + Storyblok"
+      description="Ecommerce website with Next.js + Storyblok"
     />
 
     <Layout>
