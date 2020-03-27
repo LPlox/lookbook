@@ -12,6 +12,10 @@ const Head = ({ title, description }) => (
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,700"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap"
+      rel="stylesheet"
+    ></link>
   </NextHead>
 );
 

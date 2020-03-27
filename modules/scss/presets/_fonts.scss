@@ -1,0 +1,61 @@
+$main-font-family: "Playfair Display", serif;
+$bold-font-weigth: 700;
+$regular-font-weigth: 400;
+$font-color: #1a1a1a;
+
+//====================FONT VALUES====================//
+
+.font-large {
+  font-family: $main-font-family;
+  font-size: 100px;
+  font-weight: $bold-font-weigth;
+  color: $font-color;
+}
+
+.font-big {
+  font-family: $main-font-family;
+  font-size: 68px;
+  font-weight: $bold-font-weigth;
+  color: $font-color;
+}
+
+.logo {
+  font-family: $main-font-family;
+  font-size: 28px;
+  font-weight: $bold-font-weigth;
+  color: $font-color;
+}
+
+.link-font {
+  font-family: $main-font-family;
+  font-size: 21px;
+  font-weight: $regular-font-weigth;
+  text-decoration: none;
+  color: $font-color;
+}
+
+.description-font-large {
+  font-family: $main-font-family;
+  font-size: 21px;
+  font-weight: $regular-font-weigth;
+  color: $font-color;
+}
+
+.paragraf-font {
+  font-family: $main-font-family;
+  font-size: 18px;
+  font-weight: $regular-font-weigth;
+  color: $font-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}

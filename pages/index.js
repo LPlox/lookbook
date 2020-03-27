@@ -1,22 +1,19 @@
 import fetch from "isomorphic-unfetch";
-import Head from "../modules/default/head";
-import Layout from "../modules/layout/layout";
+import Header from "../modules/components/header";
+import GridLayout from "../modules/layout/main-grid-layout";
+import Annotations from "../modules/components/annotations";
+import Landing from "../modules/components/landing-main";
+import Footer from "../modules/components/footer";
+import Layout from "../modules/layout/landing-layout";
 
 const Index = ({ content: { body } }) => (
-  <div className="container">
-    <Head
-      title="Lookbook"
-      description="Ecommerce website with Next.js + Storyblok"
-    />
-
-    <Layout>
-      <main>
-        <h1 className="title">{body[0].promo_title} &rarr;</h1>
-        <img src={body[0].promo_img[0].filename} alt="promo image" />
-      </main>
-      <footer></footer>
-    </Layout>
-  </div>
+  <Layout>
+    <GridLayout />
+    <Annotations />
+    <Header />
+    <Landing />
+    <Footer />
+  </Layout>
 );
 
 Index.getInitialProps = async () => {
