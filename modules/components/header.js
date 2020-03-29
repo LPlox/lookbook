@@ -3,7 +3,7 @@ import "../scss/load-presets-only.scss";
 import "../scss/header.scss";
 
 const Header = () => (
-  <header className="z-1">
+  <header className="z-1 position-a">
     <div className="grid-container">
       <h1 className="logo grid-layout-1-1 margin-top-20 text-center">
         Lookbook

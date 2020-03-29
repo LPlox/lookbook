@@ -17,7 +17,13 @@ const Index = ({ content: { body } }) => (
 );
 
 Index.getInitialProps = async () => {
-  const req = await fetch(`http://localhost:3000/api/home`);
+  let url;
+  if (process.env.HOSTNAME) {
+    url = `${process.env.HOSTNAME}/api/home`;
+  } else {
+    url = `http://localhost:3000/api/home`;
+  }
+  const req = await fetch(url);
   const data = req.json();
   return data;
 };
