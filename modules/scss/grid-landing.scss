@@ -9,7 +9,7 @@ $grid-columns: 4;
     min-height: 100vh;
     display: grid;
     grid-template-columns: repeat($grid-columns, 1fr);
-    z-index: -5;
+    z-index: -10;
     // grid-gap: 10px;
     // grid-auto-rows: minmax(calc(100vh / 3), auto);
 

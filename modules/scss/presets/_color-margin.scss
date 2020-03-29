@@ -12,6 +12,14 @@ $margin-component-side: 150px;
   z-index: 1;
 }
 
+.z-5 {
+  z-index: 5;
+}
+
+.z--5 {
+  z-index: -5;
+}
+
 .margin-top-20 {
   margin-top: 20px;
 }
