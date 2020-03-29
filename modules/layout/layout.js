@@ -1,4 +1,3 @@
-import Nav from "../components/nav";
 import Head from "../default/head";
 
 const Layout = props => (
@@ -8,7 +7,6 @@ const Layout = props => (
       description="Ecommerce website with Next.js + Storyblok"
     />
     {props.children}
-    <Nav />
   </div>
 );
 

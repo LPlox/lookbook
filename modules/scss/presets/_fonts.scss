@@ -7,28 +7,28 @@ $font-color: #1a1a1a;
 
 .font-large {
   font-family: $main-font-family;
-  font-size: 100px;
+  font-size: 96px;
   font-weight: $bold-font-weigth;
   color: $font-color;
 }
 
 .font-big {
   font-family: $main-font-family;
-  font-size: 68px;
+  font-size: 64px;
   font-weight: $bold-font-weigth;
   color: $font-color;
 }
 
 .logo {
   font-family: $main-font-family;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: $bold-font-weigth;
   color: $font-color;
 }
 
 .link-font {
   font-family: $main-font-family;
-  font-size: 21px;
+  font-size: 17px;
   font-weight: $regular-font-weigth;
   text-decoration: none;
   color: $font-color;
@@ -36,14 +36,14 @@ $font-color: #1a1a1a;
 
 .description-font-large {
   font-family: $main-font-family;
-  font-size: 21px;
-  font-weight: $regular-font-weigth;
+  font-size: 17px;
+  font-weight: $bold-font-weigth;
   color: $font-color;
 }
 
 .paragraf-font {
   font-family: $main-font-family;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: $regular-font-weigth;
   color: $font-color;
 }

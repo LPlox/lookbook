@@ -37,7 +37,8 @@ export default (req, res) => {
       const data = { content };
       res.setHeader("Content-Type", "application/json"); //
       res.statusCode = 200;
-      console.log(data.content);
+      // console.log(data.content);
+      console.log(data.content.body[0].promo_img);
       res.end(JSON.stringify(data));
     })
     .catch(error => {
