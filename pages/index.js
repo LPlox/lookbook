@@ -35,6 +35,8 @@ const Index = ({ content: { body } }) => {
   );
 };
 
+//I've tried this way...
+
 Index.getInitialProps = async () => {
   let url;
   if (process.env.API_URL) {
