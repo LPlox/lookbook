@@ -1,9 +1,9 @@
 @import "presets/color-margin";
 
 .promo-styling {
-  width: 84vw;
-  height: 84vh;
-  margin: 8vh 8vw;
+  width: 82vw;
+  height: 82vh;
+  margin: 9vh 10vw;
   overflow: hidden;
 
   @media screen and (orientation: landscape) {
@@ -26,7 +26,7 @@
 
   .description {
     position: absolute;
-    right: 9vw;
+    right: 11vw;
 
     p {
       color: white;

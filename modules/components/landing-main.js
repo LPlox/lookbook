@@ -10,12 +10,14 @@ const Landing = ({ title, img, date, designer, height, width }) => {
   //   setImgLink(getImgUrl(img[0].filename, imgSize));
   // }, [imgSize]);
 
+  const newDate = date.toString().slice(0, 10);
+
   return (
     <main className="position-a z--5">
       <div className="promo-styling">
         <h1 className="font-big position-a">{title}</h1>
         <div className="description">
-          <p className="paragraf-font">{date}</p>
+          <p className="paragraf-font">{newDate}</p>
           <p className="paragraf-font">{designer}</p>
         </div>
         <img src={img[0].filename} alt="promo image" />
