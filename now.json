@@ -1,7 +1,7 @@
 {
   "build": {
     "env": {
-      "HOSTNAME": "https://elookbook.now.sh/"
+      "API_URL": "https://elookbook.now.sh/"
     }
   }
 }

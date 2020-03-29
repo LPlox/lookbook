@@ -18,8 +18,8 @@ const Index = ({ content: { body } }) => (
 
 Index.getInitialProps = async () => {
   let url;
-  if (process.env.HOSTNAME) {
-    url = `${process.env.HOSTNAME}/api/home`;
+  if (process.env.API_URL) {
+    url = `${process.env.API_URL}/api/home`;
   } else {
     url = `http://localhost:3000/api/home`;
   }
