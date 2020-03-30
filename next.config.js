@@ -11,12 +11,3 @@ module.exports = withSass({
         : "http://localhost:3000"
   }
 });
-
-// module.exports = {
-//   env: {
-//     API_URL:
-//       process.env.NODE_ENV === "production"
-//         ? "https://elookbook.now.sh"
-//         : "http://localhost:3000/"
-//   }
-// };
