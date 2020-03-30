@@ -36,7 +36,7 @@ const Index = ({ content: { body } }) => {
 };
 
 Index.getInitialProps = async () => {
-  const req = await fetch(`${process.env.API_URL}/api/home`);
+  const req = await fetch(`${process.env.API_URL}/api/page/home`);
   const data = req.json();
   return data;
 };

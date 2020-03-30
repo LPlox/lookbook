@@ -5,7 +5,7 @@ const Collections = ({ content }) => {
 };
 
 Index.getInitialProps = async () => {
-  const req = await fetch(`${process.env.API_URL}/api/collections`);
+  const req = await fetch(`${process.env.API_URL}/api/allcollections`);
   const data = req.json();
   return data;
 };
