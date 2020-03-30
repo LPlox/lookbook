@@ -25,13 +25,12 @@ response.end => "This method signals to the server that all of the response head
 */
 
 export default (req, res) => {
-  const tag = req.query.slug;
-
-  Storyblok.get(`stories`, {
-    with_tag: tag
+  Storyblok.get(`cdn/stories`, {
+    with_tag: "collection",
+    version: "published"
   })
     .then(response => {
-      const data = response.body.stories;
+      const data = response.data.stories;
       res.setHeader("Content-Type", "application/json");
       res.statusCode = 200;
       console.log(data);
