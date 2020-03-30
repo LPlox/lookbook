@@ -27,15 +27,6 @@ How should the data be nested so I can pick one easily?
 
 ---
 
-Z-index
-body: -20
-grid: -10
-annotations: -5
-Header + Nav: 1
-Img + Title: 5
-
----
-
 Collection - Name of designer - Images of collection - Description of overall collection - Release date - Sold out (boolean) - End date - LINK
 
 -- Product - Name of product - Images - Sizes - Description - Price - Sold out (boolean) - tags (gender, color, season, type of clothing) - LINK

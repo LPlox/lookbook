@@ -35,9 +35,13 @@ const Index = ({ content: { body } }) => {
   );
 };
 
-//I've tried this way...
-
 Index.getInitialProps = async () => {
+  let url;
+  if (process.env.API_URL) {
+    url = `${process.env.API_URL}/api/home`;
+  } else {
+    url = `https://localhost:300/api/home`;
+  }
   const req = await fetch(process.env.API_URL);
   const data = req.json();
   return data;
