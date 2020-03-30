@@ -5,11 +5,13 @@ import "../scss/grid-navigation.scss";
 const GridNavigation = props => {
   return (
     <header className="grid-container position-a z-1">
-      <h1 className="logo grid-layout-1-1 margin-top-20 text-center">
-        Lookbook
-      </h1>
-
       <Link href="/">
+        <a className="logo grid-layout-1-1 margin-top-20 text-center">
+          Lookbook
+        </a>
+      </Link>
+
+      <Link href="/collections">
         <a className="link-font grid-layout-3-1 margin-top-30 text-center mobile-deactive">
           All Collections
         </a>
