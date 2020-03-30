@@ -7,3 +7,35 @@
     padding-left: 10px;
   }
 }
+
+.rotate-left {
+  transform: translateX(-15%) rotate(-90deg);
+  -webkit-transform: translateX(-15%) rotate(-90deg);
+  -moz-transform: translateX(-15%) rotate(-90deg);
+  -ms-transform: translateX(-15%) rotate(-90deg);
+  -o-transform: translateX(-15%) rotate(-90deg);
+}
+
+.rotate-right {
+  transform: translateX(10%) translateY(50%) rotate(90deg);
+  -webkit-transform: translateX(10%) translateY(50%) rotate(90deg);
+  -moz-transform: translateX(10%) translateY(50%) rotate(90deg);
+  -ms-transform: translateX(10%) translateY(50%) rotate(90deg);
+  -o-transform: translateX(10%) translateY(50%) rotate(90deg);
+}
+
+.align-end {
+  align-self: end;
+}
+
+.align-start {
+  align-self: start;
+}
+
+.justify-start {
+  justify-self: start;
+}
+
+.justify-end {
+  justify-self: end;
+}

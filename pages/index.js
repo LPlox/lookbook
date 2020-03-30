@@ -4,7 +4,6 @@ import GridLayout from "../modules/layout/main-grid-layout";
 import Landing from "../modules/components/landing-main";
 import Layout from "../modules/layout/layout";
 import GridNavigation from "../modules/layout/grid-navigation";
-import Annotations from "../modules/layout/annotations";
 
 const Index = ({ content: { body } }) => {
   // const [height, setHeight] = useState(null);
@@ -22,8 +21,7 @@ const Index = ({ content: { body } }) => {
   return (
     <Layout>
       <GridLayout />
-      <Annotations description={body[0].promo_description} />
-      <GridNavigation>
+      <GridNavigation description={body[0].promo_description}>
         <Landing
           title={body[0].promo_title}
           img={body[0].promo_img}
