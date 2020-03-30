@@ -1,6 +1,10 @@
 const withSass = require("@zeit/next-sass");
 module.exports = withSass({
-  env: {
-    API_URL: "https://elookbook.now.sh"
-  }
+  /* config options here */
 });
+
+module.exports = {
+  env: {
+    API_URL: process.env.NODE_ENV === 'production' ? 'https://elookbook.now.sh' || 'localhost:3000',
+  },
+}
