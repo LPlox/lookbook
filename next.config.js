@@ -3,11 +3,8 @@ module.exports = withSass({
   /* config options here */
 });
 
-const nextConfig = {
+module.exports = {
   env: {
-    API_URL:
-      process.env.NODE_ENV === "production"
-        ? "https://elookbook.now.sh"
-        : "https://localhost:3000"
-  }
-};
+    API_URL: process.env.NODE_ENV === 'production' ? 'https://elookbook.now.sh' || 'localhost:3000',
+  },
+}

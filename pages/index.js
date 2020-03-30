@@ -36,13 +36,7 @@ const Index = ({ content: { body } }) => {
 };
 
 Index.getInitialProps = async () => {
-  let url;
-  if (process.env.API_URL) {
-    url = `${process.env.API_URL}/api/home`;
-  } else {
-    url = `http://localhost:3000/api/home`;
-  }
-  const req = await fetch(url);
+  const req = await fetch(process.env.API_URL);
   const data = req.json();
   return data;
 };
