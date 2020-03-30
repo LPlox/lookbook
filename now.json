@@ -1,7 +1,1 @@
-{
-  "build": {
-    "env": {
-      "API_URL": "https://elookbook.now.sh/"
-    }
-  }
-}
+
