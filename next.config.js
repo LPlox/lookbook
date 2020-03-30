@@ -7,7 +7,7 @@ module.exports = withSass({
   env: {
     API_URL:
       process.env.NODE_ENV === "production"
-        ? "http://elookbook.now.sh"
+        ? "https://elookbook.now.sh"
         : "http://localhost:3000"
   }
 });
