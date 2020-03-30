@@ -1,0 +1,21 @@
+.rotate-left {
+  transform: translateX(-15%) rotate(-90deg);
+  -webkit-transform: translateX(-15%) rotate(-90deg);
+  -moz-transform: translateX(-15%) rotate(-90deg);
+  -ms-transform: translateX(-15%) rotate(-90deg);
+  -o-transform: translateX(-15%) rotate(-90deg);
+}
+
+.rotate-right {
+  transform: translateX(10%) translateY(50%) rotate(90deg);
+  -webkit-transform: translateX(10%) translateY(50%) rotate(90deg);
+  -moz-transform: translateX(10%) translateY(50%) rotate(90deg);
+  -ms-transform: translateX(10%) translateY(50%) rotate(90deg);
+  -o-transform: translateX(10%) translateY(50%) rotate(90deg);
+}
+
+.anno1 {
+  position: absolute;
+  top: 50;
+  left: 10;
+}

@@ -30,6 +30,22 @@
   }
 }
 
+.align-end {
+  align-self: end;
+}
+
+.align-start {
+  align-self: start;
+}
+
+.justify-start {
+  justify-self: start;
+}
+
+.justify-end {
+  justify-self: end;
+}
+
 .grid-layout-1-1 {
   grid-column: 1;
   grid-row: 1;
