@@ -17,3 +17,14 @@ body {
   z-index: -20;
   overflow-x: hidden;
 }
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .mobile-deactive {
+    display: none;
+  }
+}

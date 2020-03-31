@@ -24,20 +24,17 @@ response.end => "This method signals to the server that all of the response head
 */
 
 export default (req, res) => {
-  const slug = req.query.slug; //Saving the slug that is sent in to this function with the query
+  const slug = req.query.slug;
 
-  Storyblok.get(`cdn/stories/${slug}`, {})
+  Storyblok.get(`cdn/stories`, {
+    with_tag: slug,
+    version: "published"
+  })
     .then(response => {
-      const {
-        data: {
-          story: { content }
-        }
-      } = response;
-      const data = { content };
-      res.setHeader("Content-Type", "application/json"); //
+      const data = response.data.stories;
+      res.setHeader("Content-Type", "application/json");
       res.statusCode = 200;
-      // console.log(data.content);
-      console.log(data.content.body[0].promo_img);
+      console.log(data);
       res.end(JSON.stringify(data));
     })
     .catch(error => {

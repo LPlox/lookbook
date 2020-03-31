@@ -1,42 +1,31 @@
-import { useState, useEffect } from "react";
 import fetch from "isomorphic-unfetch";
-import GridLayout from "../modules/layout/main-grid-layout";
-import Landing from "../modules/components/landing-main";
 import Layout from "../modules/layout/layout";
-import GridNavigation from "../modules/layout/grid-navigation";
+import Header from "../modules/components/header";
+import Nav from "../modules/components/nav";
+import Grid from "../modules/layout/grid-homepage";
+import Promo from "../modules/components/promo";
 
-const Index = ({ content: { body } }) => {
-  // const [height, setHeight] = useState(null);
-  // const [width, setWidth] = useState(null);
+import "../modules/scss/nav-homepage.scss";
 
-  // if (process.browser) {
-  //   useEffect(() => setHeight(document.children[0].clientHeight), [
-  //     document.children[0].clientHeight
-  //   ]);
-  //   useEffect(() => setWidth(document.children[0].clientWidth), [
-  //     document.children[0].clientWidth
-  //   ]);
-  // }
-
+const Index = collection => {
   return (
     <Layout>
-      <GridLayout />
-      <GridNavigation description={body[0].promo_description}>
-        <Landing
-          title={body[0].promo_title}
-          img={body[0].promo_img}
-          date={body[0].promo_release}
-          designer={body[0].promo_designer_name}
-          // height={height}
-          // width={width}
-        />
-      </GridNavigation>
+      <Grid />
+      <Header />
+      <Promo
+        title={collection[0].name}
+        designer={collection[0].content.designer_name}
+        imgHorizontal={collection[0].content.main_img}
+        imgVertical={collection[0].content.mobile_img}
+        release={collection[0].content.release_date}
+      />
+      <Nav styleid={"homepage-nav"} />
     </Layout>
   );
 };
 
 Index.getInitialProps = async () => {
-  const req = await fetch(`${process.env.API_URL}/api/page/home`);
+  const req = await fetch(`${process.env.API_URL}/api/filter/promo`);
   const data = req.json();
   return data;
 };

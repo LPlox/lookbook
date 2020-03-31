@@ -1,0 +1,55 @@
+@import "presets";
+
+.promo {
+  position: absolute;
+  width: 90vw;
+  height: 70vh;
+  margin: 5vh 5vw 10vh;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  color: $primary-white;
+}
+
+.designer {
+  display: inline-block;
+  color: $primary-white;
+}
+
+.date {
+  display: inline-block;
+  color: $primary-white;
+  margin-left: 10px;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  margin-left: 4px;
+}
+
+@media screen and (orientation: landscape) {
+  .img-desktop {
+    width: 100%;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .img-desktop {
+    display: none;
+  }
+
+  .img-mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+}
