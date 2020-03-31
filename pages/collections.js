@@ -1,4 +1,5 @@
 import fetch from "isomorphic-unfetch";
+import Link from "next/link";
 import Layout from "../modules/layout/layout";
 import AllCollectionLayout from "../modules/layout/all-collection-layout";
 
@@ -11,9 +12,11 @@ const Collections = array => {
         <div className="">
           {collections.map((item, i) => (
             <div>
-              <a className="font-large" key={i}>
-                {item.name}
-              </a>
+              <Link href="/products/[slug]" as={`/products/${item.slug}`}>
+                <a className="font-large" key={i}>
+                  {item.name}
+                </a>
+              </Link>
               <hr />
             </div>
           ))}

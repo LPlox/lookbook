@@ -27,12 +27,12 @@ response.end => "This method signals to the server that all of the response head
 export default (req, res) => {
   const slug = req.query.slug;
 
-  Storyblok.get(`cdn/stories`, {
-    by_uuids: slug,
+  Storyblok.get(`cdn/stories/${slug}`, {
+    find_by: "uuid",
     version: "published"
   })
     .then(response => {
-      const data = response.data.stories;
+      const data = response.data;
       res.setHeader("Content-Type", "application/json");
       res.statusCode = 200;
       console.log(data);

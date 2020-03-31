@@ -1,7 +1,30 @@
 import fetch from "isomorphic-unfetch";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Collection = ({ content }) => {
-  return <div key={content._uid}>{content.products[0].collection_name}</div>;
+  const itemArray = content.products[1].items;
+  console.log(itemArray);
+  const router = useRouter();
+
+  return (
+    <div>
+      {content.products[0].collection_name}
+      {itemArray.map((item, i) => {
+        return (
+          <div key={item._uid}>
+            <p>{item.name}</p>
+            <Link href="item/[id]" as={`item/${item._uid}`}>
+              {item.item_images[0].filename ? (
+                <img src={item.item_images[0].filename} alt="products" />
+              ) : null}
+            </Link>
+            <p>{item.description}</p>
+          </div>
+        );
+      })}
+    </div>
+  );
 };
 
 Collection.getInitialProps = async ({ query }) => {
