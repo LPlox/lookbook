@@ -2,7 +2,7 @@ import fetch from "isomorphic-unfetch";
 import Link from "next/link";
 import Layout from "../modules/layout/layout";
 import Header from "../modules/components/header";
-import Nav from "../modules/components/Nav";
+import Nav from "../modules/components/nav";
 
 import "../modules/scss/nav-allcollections.scss";
 import "../modules/scss/allcollections.scss";
