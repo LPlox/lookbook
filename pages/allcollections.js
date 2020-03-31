@@ -15,10 +15,13 @@ const AllCollections = array => {
       <Header />
       <Nav styleid={"allcollection-nav"} />
       <hr />
-      <div className="">
+      <div>
         {collections.map((item, i) => (
           <div>
-            <Link href="/[collection]" as={`/${item.slug}`}>
+            <Link
+              href="/collection/[collection]"
+              as={`/collection/${item.uuid}`}
+            >
               <a className="collection-link font-large" key={i}>
                 {item.name}
               </a>

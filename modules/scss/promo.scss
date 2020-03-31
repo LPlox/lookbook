@@ -11,17 +11,17 @@
 .title {
   position: absolute;
   bottom: 0;
-  color: $primary-white;
+  color: $primary-white !important;
 }
 
 .designer {
   display: inline-block;
-  color: $primary-white;
+  color: $primary-white !important;
 }
 
 .date {
   display: inline-block;
-  color: $primary-white;
+  color: $primary-white !important;
   margin-left: 10px;
 }
 
