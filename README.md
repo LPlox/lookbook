@@ -1,4 +1,4 @@
-## Designers Lookbook - ecommerce with Next.js + Storyblok
+# Designers Lookbook - ecommerce with Next.js + Storyblok
 
 Run the development server:
 
