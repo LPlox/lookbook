@@ -16,21 +16,19 @@ npm run dev
 
 ## Thinking it out in my readme
 
-Make sure to do a npm install when you enter another branch
+Specific pages: <br>
+Home <br>
+All Collections <br>
+Everything else is generated from slugs <br>
 
-I need a 1. homepage 2.Collections page as default pages. Here I can get the data as getInitialProperty to the specific pages.
-Everything else needs to be called from a slug.
-It's probably bad practice to call the storyblok many times or on different pages. It's better to do it at one place and then distribute it in the different pages.
-
-Homepage has a special collection on display.
-How should the data be nested so I can pick one easily?
+Api router <br>
+api/collection --> either get a specific collection with it's items collection-uuid or /all to get every collection <br>
+api/filter --> slug is the specific filter. Example filters: summer, collection, men etc. <br>
+api/item --> gets the specific item with it's name slug
 
 ---
 
-Collection - Name of designer - Images of collection - Description of overall collection - Release date - Sold out (boolean) - End date - LINK
+## Storyblok structure.
 
--- Product - Name of product - Images - Sizes - Description - Price - Sold out (boolean) - tags (gender, color, season, type of clothing) - LINK
-
-Sort functions: New / Old - All Designers name - Season - Clothing piece
-
-Categories:
+Each Collection information is store within a folder.
+Each Product is stored in an Items folder but are not nestled or directly linked with a Collection. The connection is made based on relation-tag.
