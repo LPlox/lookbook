@@ -5,8 +5,6 @@ import Nav from "../modules/components/nav";
 import Grid from "../modules/layout/grid-homepage";
 import Promo from "../modules/components/promo";
 
-import "../modules/scss/nav-homepage.scss";
-
 const Index = collection => {
   return (
     <Layout>
@@ -19,7 +17,7 @@ const Index = collection => {
         imgVertical={collection[0].content.mobile_img}
         release={collection[0].content.release_date}
       />
-      <Nav styleid={"homepage-nav"} />
+      <Nav />
     </Layout>
   );
 };
