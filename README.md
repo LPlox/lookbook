@@ -6,6 +6,8 @@ Run the development server:
 npm run dev
 ```
 
+Doesn't work on mobile yet.
+
 ## Todo list for myself
 
 [x] npm install --save @zeit/next-sass node-sass </br>
