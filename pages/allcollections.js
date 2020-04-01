@@ -19,7 +19,7 @@ const AllCollections = array => {
         {collections.map((item, i) => (
           <div key={i}>
             <Link
-              href="/collection/[collection]"
+              href={`/collection/[collection]`}
               as={`/collection/${item.uuid}`}
             >
               <a className="collection-link font-large" key={i}>
