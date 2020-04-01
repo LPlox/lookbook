@@ -1,5 +1,5 @@
-import "../scss/collection.scss";
 import Link from "next/link";
+import "../scss/collection.scss";
 
 const CollectionProducts = ({ products: { items } }) => {
   const productsArray = Object.values(items);
@@ -17,7 +17,7 @@ const CollectionProducts = ({ products: { items } }) => {
 
   return (
     <main>
-      <div className="horizaontal-scroll" onWheel={onWheel} id="container">
+      <div className="horizontal-scroll" onWheel={onWheel} id="container">
         <div className="product-container"></div>
         <div className="product-container"></div>
         <div className="product-container"></div>

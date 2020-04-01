@@ -2,7 +2,7 @@ import "../scss/product.scss";
 
 const Item = ({ name, desc, price, sizes, images, material }) => {
   return (
-    <main className="product-container">
+    <main className="item-container">
       <div className="box-1 box-top"></div>
       <div className="box-2">
         <div className="box-left"></div>

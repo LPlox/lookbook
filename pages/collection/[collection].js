@@ -5,7 +5,6 @@ import Header from "../../modules/components/header";
 import CollectionProducts from "../../modules/components/collection-products";
 
 const Collection = items => {
-  // const products = Object.values(items);
   return (
     <Layout>
       <Header />
