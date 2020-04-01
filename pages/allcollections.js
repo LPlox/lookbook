@@ -35,7 +35,7 @@ const AllCollections = array => {
 };
 
 AllCollections.getInitialProps = async () => {
-  const req = await fetch(`${process.env.API_URL}/api/allcollections`);
+  const req = await fetch(`${process.env.API_URL}/api/collection/all`);
   const data = req.json();
   return data;
 };
