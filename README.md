@@ -11,8 +11,8 @@ npm run dev
 [x] npm install --save @zeit/next-sass node-sass </br>
 [x] npm install swr</br>
 [x] npm install storyblok-node-client</br>
-[ ] npm install --save isomorphic-unfetch</br>
-[ ] set a storyblok and backend API fetch with next</br>
+[x] npm install --save isomorphic-unfetch</br>
+[x] set a storyblok and backend API fetch with next</br>
 
 ## Thinking it out in my readme
 
