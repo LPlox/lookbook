@@ -7,6 +7,16 @@ npm run dev
 ```
 
 Doesn't work on mobile yet.
+# Challenges
+1. My challenges that I set on myself. <br>
+2. The frustration of not knowing what I don't know <br>
+3. Understanding Storyblok 
+
+# Learnings
+1. How the connection is made between front and back end. <br>
+2. I'm not as scared to work with things/data that I cannot get full feedback on. The scary backend tunnel that I didn't want to enter isn't that scary anymore. (console.log every single step) <br>
+3.Learning how to read documentations. Those are made for geniuses. Omgosh! So hard to understand!! 
+
 
 ## Todo list for myself
 
