@@ -21,6 +21,13 @@ $font-color: #1a1a1a;
   text-decoration: none;
 }
 
+.font-medium {
+  font-family: $main-font-family;
+  font-size: 44px;
+  font-weight: $bold-font-weigth;
+  color: $font-color;
+}
+
 .logo {
   font-family: $main-font-family;
   font-size: 24px;

@@ -17,7 +17,7 @@ const AllCollections = array => {
       <hr />
       <div>
         {collections.map((item, i) => (
-          <div>
+          <div key={i}>
             <Link
               href="/collection/[collection]"
               as={`/collection/${item.uuid}`}

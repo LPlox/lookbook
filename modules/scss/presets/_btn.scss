@@ -3,3 +3,8 @@ $btn-color: #191919;
 .btn-border {
   border: 1px solid $btn-color;
 }
+
+.btn-none {
+  border: none;
+  cursor: pointer;
+}

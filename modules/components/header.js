@@ -8,16 +8,16 @@ const Header = () => {
   return (
     <header className="flex-container">
       <Link href="/">
-        <h1 className="logo flex-item text-center">Lookbook</h1>
+        <a className="logo flex-item text-center">Lookbook</a>
       </Link>
       <div className="flex-item"></div>
       <Link href="/allcollections">
-        <h2 className="link-font flex-item text-center mobile-deactive">
+        <a className="link-font flex-item text-center mobile-deactive">
           All Collections
-        </h2>
+        </a>
       </Link>
       <div className="flex-item">
-        <button className="logo dropdown btn-broder">↓</button>
+        <button className="logo dropdown btn-none">↓</button>
       </div>
     </header>
   );

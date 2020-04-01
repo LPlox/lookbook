@@ -1,0 +1,130 @@
+@import "presets";
+
+$border: 1px solid $dark-hue;
+
+.product-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box-1 {
+  height: 20vh;
+  width: 100vw;
+  border-bottom: $border;
+}
+
+.box-2 {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: row;
+
+  .box-left {
+    position: relative;
+    display: block;
+    width: 20vw;
+    border-right: $border;
+  }
+
+  .info-box {
+    display: block;
+    width: 30vw;
+    padding: 10px;
+    padding-top: 5vh;
+    border-right: $border;
+
+    .text-container > * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .text-container {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      left: -35px;
+      margin-top: 20px;
+    }
+
+    .shift-left-name {
+      position: relative;
+      top: 16px;
+      left: -20px;
+    }
+
+    .text-container-desc {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      left: -74px;
+    }
+
+    .shift-left-desc {
+      position: relative;
+      top: 0;
+      left: -20px;
+    }
+
+    .text-container-material {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      left: -54px;
+      margin-top: 100px;
+    }
+
+    .shift-left-material {
+      position: relative;
+      top: 0;
+      left: -20px;
+    }
+  }
+
+  .img-container {
+    display: block;
+    width: 48vw;
+    padding-right: 2vw;
+    img {
+      width: 48vw;
+    }
+  }
+}
+
+.box-3 {
+  height: 30vh;
+  width: 100vw;
+  border-top: $border;
+
+  .info-bottom {
+    height: 30vh;
+    width: 50vw;
+    position: relative;
+    left: 50vw;
+    border-left: $border;
+  }
+  .purchase {
+    position: absolute;
+    margin-right: 2vw;
+    right: 0;
+    top: 10px;
+    width: 100px;
+    height: 40px;
+  }
+}
+
+.line-1 {
+  position: relative;
+  top: 1%;
+}
+.line-10 {
+  position: relative;
+  top: 10%;
+}
+.line-60 {
+  position: relative;
+  top: 60%;
+}
+
+.visibility-none {
+  visibility: hidden;
+}

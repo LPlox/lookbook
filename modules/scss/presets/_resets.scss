@@ -20,11 +20,15 @@ body {
 
 .layout {
   width: 100vw;
-  height: 100vh;
 }
 
 @media (max-width: 900px) {
   .mobile-deactive {
     display: none;
   }
+}
+
+img,
+a {
+  cursor: pointer;
 }

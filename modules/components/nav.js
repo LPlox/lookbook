@@ -4,7 +4,6 @@ import "../scss/load-presets.scss";
 import "../scss/grid4x4.scss";
 
 const Nav = ({ styleid }) => {
-  console.log(styleid);
   return (
     <nav className="flex-container mobile-deactive" id={styleid}>
       <Link href="/">

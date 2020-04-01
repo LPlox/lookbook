@@ -1,92 +1,61 @@
-@import "presets";
-$grid-border: 1px solid $dark-hue;
-$grid-columns: 4;
-
-@media (min-width: 901px) {
-  .collection-grid {
-    position: absolute;
-    width: 100vw;
-    height: 20vh;
-    display: grid;
-    top: 0;
-    grid-template-columns: repeat($grid-columns, 1fr);
-    z-index: -10;
-    // grid-gap: 10px;
-    // grid-auto-rows: minmax(calc(100vh / 3), auto);
-
-    @for $i from 1 to $grid-columns {
-      .grid-1-#{i} {
-        grid-column: 1;
-        grid-row: #{i};
-      }
-
-      .grid-display {
-        border-right: $grid-border;
-        border-bottom: $grid-border;
-      }
-
-      .mobile-active {
-        display: none;
-      }
-    }
-  }
-}
-
-@media (max-width: 900px) {
-  .collection-grid {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 20vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    z-index: -10;
-    // grid-gap: 10px;
-    // grid-auto-rows: minmax(calc(100vh / 3), auto);
-
-    @for $i from 1 to 3 {
-      .grid-1-#{i} {
-        grid-column: 1;
-        grid-row: #{i};
-      }
-    }
-
-    .grid-display {
-      border-right: $grid-border;
-      border-bottom: $grid-border;
-    }
-  }
-}
-
 .collection-desc {
   position: absolute;
   bottom: 20vh;
   width: 100vw;
-
-  .headline {
-    position: absolute;
-    right: 0;
-    width: 90vh;
-  }
 }
 
 .horizaontal-scroll {
-  position: relative;
-  top: 10vh;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  position: absolute;
+  flex-wrap: nowrap;
+  top: 19vh;
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   padding: 5vh 0;
+  justify-content: space-around;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-padding-left: 20px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   .product-container {
-    width: 50vh;
-    height: 50vh;
+    margin: 0 12px;
+    min-width: 50vh;
+    min-height: 50vh;
     overflow: hidden;
     display: inline-block;
   }
 
   .product-img {
     width: 100%;
-    height: 100%;
+    // height: 100%;
   }
+
+  .product-img-2 {
+    z-index: 10;
+    width: 100%;
+    // height: 100%;
+  }
+}
+
+.scroll-advice {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 60vw;
+  width: 20vw;
+}
+
+.hover-hide {
+  display: none;
 }

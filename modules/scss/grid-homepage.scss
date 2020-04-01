@@ -5,6 +5,8 @@ $grid-columns: 4;
 @media (min-width: 901px) {
   .background-grid {
     position: absolute;
+    top: 0;
+    right: 0;
     width: 100vw;
     min-height: 100vh;
     display: grid;
