@@ -5,6 +5,7 @@ import Nav from "../modules/components/nav-top";
 import CollectionLinks from "../modules/components/collection-links";
 
 const AllCollections = array => {
+  console.log(array);
   return (
     <Layout>
       <Header />
