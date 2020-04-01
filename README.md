@@ -30,5 +30,5 @@ api/item --> gets the specific item with it's name slug
 
 ## Storyblok structure.
 
-Each Collection information is store within a folder.
+Each Collection information is store within a folder. <br>
 Each Product is stored in an Items folder but are not nestled or directly linked with a Collection. The connection is made based on relation-tag.
