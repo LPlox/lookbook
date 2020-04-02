@@ -36,7 +36,6 @@ export default (req, res) => {
       const data = response.data.stories;
       res.setHeader("Content-Type", "application/json");
       res.statusCode = 200;
-      console.log(data);
       res.end(JSON.stringify(data));
     })
     .catch(error => {

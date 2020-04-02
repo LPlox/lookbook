@@ -6,7 +6,7 @@ import "../scss/header.scss";
 
 const Header = () => {
   return (
-    <header className="flex-container">
+    <header className="flex-container z-5">
       <Link href="/">
         <a className="logo flex-item text-center">Lookbook</a>
       </Link>

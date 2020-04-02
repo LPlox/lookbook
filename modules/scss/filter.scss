@@ -1,0 +1,18 @@
+@import "presets";
+
+$border: 1px solid $dark-hue;
+
+.filter-result-layout {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+
+  .filter-product-img {
+    width: 50vw;
+    padding: 50px;
+
+    img {
+      width: 100%;
+    }
+  }
+}

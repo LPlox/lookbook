@@ -21,6 +21,7 @@ const CollectionProducts = ({ products: { items } }) => {
         <div className="product-container"></div>
         <div className="product-container"></div>
         <div className="product-container"></div>
+        <div className="product-container"></div>
         {productsArray.map((item, itemIndex) => {
           const data = item.content;
           if (data) {

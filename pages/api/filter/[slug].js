@@ -26,14 +26,13 @@ export default (req, res) => {
   const slug = req.query.slug;
 
   Storyblok.get(`cdn/stories`, {
-    with_tag: slug,
+    with_tag: `${slug}`,
     version: "published"
   })
     .then(response => {
       const data = response.data.stories;
       res.setHeader("Content-Type", "application/json");
       res.statusCode = 200;
-      console.log(data);
       res.end(JSON.stringify(data));
     })
     .catch(error => {

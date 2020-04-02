@@ -5,6 +5,8 @@ import Nav from "../modules/components/nav";
 import Grid from "../modules/layout/grid-homepage";
 import Promo from "../modules/components/promo";
 
+import "../modules/scss/presets/_index.scss";
+
 const Index = collection => {
   return (
     <Layout>
