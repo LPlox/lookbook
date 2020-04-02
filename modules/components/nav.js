@@ -16,7 +16,7 @@ const Nav = () => {
       <Link href="/filter/woman">
         <a className="link-font flex-item text-center">Woman</a>
       </Link>
-      <Link href="/filter/summer">
+      <Link href="/filter/autumn">
         <a className="link-font flex-item text-center">Season</a>
       </Link>
     </nav>
